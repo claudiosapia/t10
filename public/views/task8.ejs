@@ -1,0 +1,29 @@
+<%- include('./partials/head'); %>
+<title>Task 8</title>
+</head>
+<body>
+<h1 class="display-1">Task 8</h1>
+<br>
+<p class="lead">Implement and test a program to enter and validate a password. The program should do the following:<br>
+    Prompt the user to enter their password that can contain letters and numbers and be at least six characters long. If the password is correct, it should display a welcome message. If not, it should notify the user that their password was entered wrongly, they should be warned that they will be locked out of the system after three attempts and let them try again, but only allow three tries. If the user makes three incorrect attempts they should receive a suitable message</p>
+
+<br>
+<div class="jumbotron text-center">
+    <h3 class="display-3">Input Password and Submit </h3><br>
+    <form name="form" action="#">
+    <h1>
+    <h2><input onfocus="this.value=''" type="password" value=""  id="input"  name='userInput'/></h2> <br>
+    <h4>Please enter at least 7 characters which contain only letters and numeric digits</h2>
+    <h2></h2>&nbsp;</h2></h2><br><br>
+    <p id="characterCheck"></p>
+    
+    <button type="button" id="btnPwdCheck"  class="btn btn-primary btn-lg"> Submit </button>
+    </form>
+    </div>
+
+
+
+    <script src="/public/task8.js"></script>
+    </body>
+
+    </html>

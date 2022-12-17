@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* task 3 */
+.num {
+  padding: 2em;
+  margin: 1em 2em;
+}
+
+.plus {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.result {
+  padding: 2em;
+}
+
+.task5Container {
+  font-size: 14em;
+}
+
+/* task6 */
+table th {
+  font-family: "Inter", sans-serif;
+  margin: auto;
+  width: 8em;
+  height: 2em;
+  background-color: rgb(197, 230, 210);
+  color: rgb(247, 12, 12);
+}
+table tr {
+  font-family: "Inter", sans-serif;
+  width: 3em;
+  height: 3em;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+table {
+  margin: auto;
+}
+
+/* task8 */
+.hide {
+  display: none;
+  opacity: 0;
+}
+
+/* Task 10 */
+
+.square {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 50%;
+  height: 50%;
+  border: 2px black solid;
+  padding: 6rem 0rem;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: rgb(68, 54, 54);
+}
+
+.warn {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.bgPlay {
+  background-color: #0f1123;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: white;
+  font-family: "Inter", sans-serif;
+}

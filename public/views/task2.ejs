@@ -1,0 +1,247 @@
+<%- include('./partials/head'); %>
+<title>Task 2</title>
+</head>
+<body>
+<div class="jumbotron">
+    <h1 class="display-1">Task 2
+       </h1>
+       <p class="lead"> Implement and test a program which will allow users to complete a survey about local facilities. The survey has 15 questions with different possible responses — some numerical answers and some text answers. Only one response is possible for each question. Every question has an option of ‘Do not know’. You should use a record structure to store details of the survey questions. There should also be an option in the program to calculate the total number of ‘Do not know’ responses.
+        You should test the program with five users.</p>
+</div>
+<br> 
+<div class="jumbotron bg-dark text-white">
+<div class="container">
+  <h1>What do you think about the facilities in Edinburgh ?</h1>
+  
+  </div>
+  <br> <br> 
+  <form  id="survey" name="form1">
+    <!-- Question 1 -->
+    <h3 id="q1">1. Do you live in Edinburgh ?</h3>
+    <!-- Choices for question 1-->
+    <label><input  type="radio" name="question1" value="option1">
+     Yes
+    </label><br> 
+    <label><input type="radio" name="question1" value="option2">
+     No
+    </label><br> 
+    <label><input type="radio" name="question1" value="option4">
+       Do not know
+    </label><br> 
+   
+    <br> 
+    <!-- Question 2 -->
+    <h3>2. Have you been in Edinburgh for more than 5 years ?</h3>
+    <!-- Choices for question 2 -->
+    <label><input type="radio" name="question2" value="option1">
+     Yes
+    </label><br> 
+    <label><input type="radio" name="question2" value="option2">
+     No
+    </label><br> 
+    <label><input type="radio" name="question2" value="option4">
+       Do not know
+    </label><br> 
+    <br> 
+    <!-- Question 3 -->
+    <h3>3.Please let us know about your current situation</h3>
+    <!-- Choices for question 3-->
+    <label><input type="radio" name="question3" value="option1">
+    Employed
+    </label><br> 
+    <label><input type="radio" name="question3" value="option2">
+Unemployed    </label><br> 
+    <label><input type="radio" name="question3" value="option3">
+Student    </label><br> 
+    <label><input type="radio" name="question3" value="option4">
+     Do not know
+    </label><br> 
+    <br> 
+    <!-- Question 4 -->
+    <h3>4. What do you like mostly about Edinburgh?</h3>
+    <!-- Choices for question 4 -->
+    <label><input type="radio" name="question4" value="option1">
+     The colours of the buildings and the atmosphere
+    </label><br> 
+    <label><input type="radio" name="question4" value="option2">
+     The city , the parks and nature reservoirs are kept clean 
+    </label><br> 
+    <label><input type="radio" name="question4" value="choice3">
+        The city , the parks and nature reservoirs facilities
+    </label><br> 
+    <label><input type="radio" name="question4" value="option4">
+     Do not know
+    </label><br> <br> 
+    
+     <!-- Question 5 -->
+    <h3>5.  What do you dislike about Edinburgh?</h3>
+    <!-- Choices for question 5-->
+    <label><input type="radio" name="question5" value="option1">
+    The seagulls
+    </label><br> 
+    <label><input type="radio" name="question5" value="option2">
+    The facilities
+    </label><br> 
+    <label><input type="radio" name="question5" value="choice3">
+     The cold
+    </label><br> 
+    <label><input type="radio" name="question5" value="option4">
+     Do not know
+    </label><br> <br> 
+    
+     <!-- Question 6 -->
+     <h3>6.  How would you rate Edinburgh facilities?<br>On a scale of 1 to 10, where 1 is bad and 10 is excellent.<br>Enter 11 if you do not know.</h3>
+    <!-- Choices for question 6-->
+    <label><input type="text" name="rating" id="rating" value="">    
+    </label><br> <br> 
+  
+     <!-- Question 7 -->
+    <h3>7.  Which of the following facilities do you think are up to standard?</h3>
+    <!-- Choices for question 7-->
+    <label><input type="radio" name="question7" value="option1">
+        Public streets, curbs and gutters, sidewalks, traffic signals, signing, roadways, bridges
+    </label><br> 
+    <label><input type="radio" name="question7" value="option2">
+        Parking lots, parks, public landscaping and trees
+    </label><br> 
+   <label><input type="radio" name="question7" value="option4">
+       Do not know
+    </label><br> <br> 
+    
+     <!-- Question 8 -->
+    
+     <h3>8. Are there enough facilities in Edinburgh?</h3>
+     <!-- Choices for question 8 -->
+    <label><input type="radio" name="question8" value="option1">
+      Yes
+     </label><br> 
+     <label><input type="radio" name="question8" value="option2">
+      No
+     </label><br> 
+     <label><input type="radio" name="question8" value="option4">
+        Do not Know
+     </label>
+     <br> <br> 
+    
+     <!-- Question 9 -->
+    
+     <h3>9.  What are the main problems in Edinburgh?</h3>
+     <!-- Choices for question 9-->
+     <label><input type="radio" name="question9" value="option1">
+      Pollution
+     </label><br> 
+     <label><input type="radio" name="question9" value="option2">
+      Homelessness 
+     </label><br> 
+     <label><input type="radio" name="question9" value="choice3">
+      Health care
+     </label><br> 
+     <label><input type="radio" name="question9" value="option4">
+      Do not know
+     </label><br> 
+     <br> 
+     
+     <!-- Question 10 -->
+    <h3>10. What would you improve?</h3>
+    <!-- Choices for question 10-->
+    <label><input type="radio" name="question10" value="option1">
+    Housing costs
+    </label><br> 
+    <label><input type="radio" name="question10" value="option2">
+    Health care
+    </label><br> 
+    <label><input type="radio" name="question10" value="option4">
+     Do not know
+    </label><br> 
+    <br> 
+     <!-- Question 11 -->
+     <h3>11. Do you feel valued as a citizen ?</h3>
+     <!-- Choices for question 9-->
+     <label><input type="radio" name="question11" value="option1">
+     Yes
+     </label><br> 
+     <label><input type="radio" name="question11" value="option2">
+     No </label><br> 
+     <label><input type="radio" name="question11" value="option4">
+      Do not know
+     </label><br> <br> 
+
+
+     <br> 
+     <!-- Question 12 -->
+    <h3>12. How can we improve your life in Edinburgh ?</h3>
+    <!-- Choices for question 12-->
+    <label><input type="radio" name="question12" value="option1">
+     Create employment
+    </label><br> 
+    <label><input type="radio" name="question12" value="option2">
+     Reduce tax and Housing.
+    </label><br> 
+    <label><input type="radio" name="question12" value="choice3">
+     Reduce pollution
+    </label><br> 
+    <label><input type="radio" name="question12" value="option4">
+     Do not know
+    </label><br> 
+    <br> 
+     <!-- Question 13 -->
+     <h3>13. Would you recommend to a friend to visit Edinburgh ?</h3>
+
+     <label><input type="radio" name="question13" value="option1">
+        Yes
+       </label><br> 
+       <label><input type="radio" name="question13" value="option2">
+        No       </label><br> 
+       <label><input type="radio" name="question13" value="option4">
+        Do not know
+       </label><br> 
+       <br> 
+
+
+
+     <!-- Question 14 -->
+    <h3>14. Would you recommend to a friend to live in Edinburgh ?</h3>
+    <!-- Choices for question 14-->
+ 
+    <label><input type="radio" name="question14" value="option1">
+        Yes
+       </label><br> 
+       <label><input type="radio" name="question14" value="option2">
+        No       </label><br> 
+       <label><input type="radio" name="question14" value="option4">
+        Do not know
+       </label><br> 
+       <br> 
+
+     <!-- Question 15 -->
+    <h3>15. Accessibility in Edinburgh  </h3>
+    <br>
+    <!-- Choices for question 15-->
+      <label >Is Edinburgh Weelchair accessible ?</label>    <br>  <br>   
+      <label><input type="radio" name="question15" value="option1">
+        Yes
+       </label><br> 
+       <label><input type="radio" name="question15" value="option2">
+        No
+       </label><br> 
+       <label><input type="radio" name="question15" value="option4">
+          Do not know
+       </label><br> 
+                </select>
+                <br><br>        
+    <button type="button" onclick="countDoNotKnow(); "  class="btn btn-primary btn-lg" type="button" id="submit" >Submit</button>
+  <button type="button"  onclick="resetForm();" class="btn btn-danger btn-lg" type="reset" id="reset" onclick="reset()">Reset</button>
+  </form>
+  <br><br>
+   <div id="result">Your feedback is displayed below: </div>
+   
+</div>
+
+
+    
+</div>
+
+<script src="/public/task2.js"></script>
+</body>
+
+</html>

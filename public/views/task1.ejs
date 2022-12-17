@@ -1,0 +1,89 @@
+<%- include('./partials/head'); %>
+<title>Task 1</title>
+</head>
+<body>
+
+  <div class="jumbotron ">
+    <h1 class="display-1">Task 1</h1> <br>
+    <p class="lead">Scottish Athletics is running trials for 400 metre athletes. There are four groups of eight
+      athletes. The runners run two separate laps and their times are recorded as they complete each of the two laps.
+      Any runner who completes either of the two laps in under 50 seconds progresses to the next stage of selection. The
+      runner from each of the groups with the fastest lap will receive a medal of commendation.</p>
+    <br>
+    <p>Your task is:</p>
+
+    <p>to write a program for one of the groups of female runners find the runners who will progress to the next stage
+      find the runner with the fastest lap</p>
+
+    <p>Save this information to a file. You can assume that no two runners have the same name.</p>
+
+    <p>The program requires the following inputs: </p>
+
+    <p>a valid number of runners the first and second name of each runner the time taken to run the first lap the time
+      taken to run the second lap </p>
+
+    <p>The output from the program should display the fastest runner, each runner’s name and indicate whether they will
+      progress to the next stage of selection.</p>
+  </div>
+  <div class="jumbotron bg-dark text-white text-center">
+    <h1 class="display-2">Scottish Athletics, 400 Meter Trials</h1> <br><br>
+    <h3 class="display-4">The runner with the fastest lap is:</h3><br><br>
+    <h3 class="display-3"><span id="fastestRunner"></span></h3><br><br>
+    <h3 class="display-4">Completing the lap in only <span id="time"></span> seconds</h3>
+    <br><br><br>
+
+    
+
+
+    <table class="table " id="grpA">
+      <caption>The list above is the list of the runners in group A. They have to finish one of the 2 laps in less than
+        50 seconds to progress to the next stage.</caption>
+      <thead>
+        <tr>
+          <h1>Group A</h1><br>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Lap 1</th>
+          <th scope="col">Lap 2</th>
+        </tr>
+      </thead>
+      <tbody id="groupA">
+        <!--  CONTENT IN TABLE WILL BE ADDED WITH JS -->
+      </tbody>
+    </table> <br>
+    <!-- RUNNERS PROGRESSING TO NEXT STAGE TABLE -->
+    <table id="runners-progressing" class="table">
+      <caption>The list above, is the list of the runners who finished one of the 2 laps in less than 50 seconds.
+      </caption>
+      <thead>
+        <tr>
+          <h1>List of runners progressing to the next stage of selection </h1><br>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Lap 1</th>
+          <th scope="col">Lap 2</th>
+        </tr>
+        <!--  Content in table will be added with js -->
+      </thead>
+      <tbody id="rProgressing">
+      </tbody>
+    </table>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/public/task1.js"></script>
+  </body>
+
+  </html>
